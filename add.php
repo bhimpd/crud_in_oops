@@ -16,7 +16,6 @@ $crud = new Crud();
 </head>
 
 <body>
-
     <div class="card">
         <div class="card-header">
             <h2><a href="index.php"><i class="fa-solid fa-list">View Lists</i></a></h2>
@@ -38,9 +37,7 @@ $crud = new Crud();
 
                 <input type="submit" id="submit" name="submit">
             </form>
-
         </div>
-
     </div>
 </body>
 

@@ -20,7 +20,6 @@ if (isset($_POST['update'])) {
     ];
 
     $result = $crud->updateData($id,"student",$updated_data);
-
     if (!$result) {
         echo "Error updating record: " . $crud->conn->error;
     } else {

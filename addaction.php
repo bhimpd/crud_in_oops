@@ -3,7 +3,6 @@ include_once "./classes/Crud.php";
 
 $crud = new Crud();
 
-
 if (isset($_POST['submit'])) {
 
     $name = $crud->conn->real_escape_string($_POST['name']);

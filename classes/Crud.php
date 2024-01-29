@@ -46,7 +46,6 @@ class Crud extends Database
     public function deleteData($id, $table)
     {
         $sql = "DELETE from $table WHERE id='$id'";
-
         $result = $this->conn->query($sql);
         if ($result)
             return true;
@@ -74,14 +73,11 @@ class Crud extends Database
             $setValues .= "$key = '" . $this->conn->real_escape_string($value) . "', ";
         }
         $setValues = rtrim($setValues, ', ');
-
         $sql = "UPDATE $table SET $setValues WHERE id = $id";
-
         $result = $this->conn->query($sql);
-
         if ($result) {
             echo "Data updated..";
             return true;
-        } 
+        }
     }
 }

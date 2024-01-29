@@ -1,7 +1,6 @@
 <?php
 
 include_once "./classes/Crud.php";
-
 include_once "./deleteaction.php";
 
 $crud = new Crud();
@@ -24,7 +23,6 @@ $crud = new Crud();
         <h4>PHP: CRUD (Add, Edit, Delete, View) Application using OOP (Object Oriented Programming) and MYSQL</h4>
     </div><br><br>
     <div class="container">
-
         <h2>View Records
             <a href="add.php" class="btn btn-primary" style="float:right;">Add New Record</a>
         </h2>
@@ -42,9 +40,7 @@ $crud = new Crud();
             <tbody>
 
                 <?php
-
                 $student =  $crud->displayData();
-
                 foreach ($student as $stu) {
                 ?>
                     <tr>
